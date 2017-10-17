@@ -99,6 +99,7 @@ module RainforestRubyRuntime
         "sauce" => Drivers::Sauce,
         "testingbot" => Drivers::TestingBot,
         "browser_stack" => Drivers::BrowserStack,
+        "chrome" => Drivers::Chrome,
       }.fetch(driver)
 
       config.new(config_options).call
